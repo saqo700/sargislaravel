@@ -34,3 +34,18 @@ Route::get('/sign-up', [UserController::class, 'getSignUp'])->name('user.signup'
 //POST METHOD
 Route::post('/login', [UserController::class, 'postLogin']);
 Route::post('/sign-up', [UserController::class, 'postSignUp']);
+
+/*
+ *
+ * sda
+ *
+ * asd
+ * as
+ * das
+ * d
+ * asd
+ * asd
+ * asd
+ *
+ */
+Route::post('/sign-up', [UserController::class, 'postSignUp']);
