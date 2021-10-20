@@ -23,9 +23,12 @@ Route::get('/home', function () {
 
 use App\Http\Controllers\UserController;
 
+// comit 2 test
 
 //GET METHOD
 Route::get('/login', [UserController::class, 'getLogin']);
+Route::get('/sign-up', [UserController::class, 'getSignUp'])->name('user.signup');
+
 Route::get('/sign-up', [UserController::class, 'getSignUp'])->name('user.signup');
 
 //POST METHOD
