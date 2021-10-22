@@ -26,43 +26,14 @@ use App\Http\Controllers\UserController;
 // comit 2 test
 
 //GET METHOD
-Route::get('/login', [UserController::class, 'getLogin']);
-Route::get('/sign-up', [UserController::class, 'getSignUp'])->name('user.signup');
 
+Route::get('/login', [UserController::class, 'getLogin'])->name('login');
 Route::get('/sign-up', [UserController::class, 'getSignUp'])->name('user.signup');
+Route::get('/users', [UserController::class, 'getUsers'])->name('user.list');
+
 
 //POST METHOD
+
 Route::post('/login', [UserController::class, 'postLogin']);
 Route::post('/sign-up', [UserController::class, 'postSignUp']);
-Route::post('/sign-up', [UserController::class, 'postSignUp']);
 
-/*
- *
- *
- * fdsfsdf
- * dsfsd
- * fsd
- * f
- * sd
- * fsd
- * f
- * sdf
- * sd
- * f
- * s
- */
-
-/*
- *
- * sda
- *
- * asd
- * as
- * das
- * d
- * asd
- * asd
- * asd
- *
- */
-Route::post('/sign-up', [UserController::class, 'postSignUp']);
